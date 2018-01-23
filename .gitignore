@@ -1,0 +1,6 @@
+bin/*.exe
+cmake-build-debug/
+.idea
+CMakeLists.txt
+obj/*.o
+doc/*
