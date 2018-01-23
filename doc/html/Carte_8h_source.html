@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Damibin/A-Maze-Inc:  Fichier source de src/include/Carte.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Damibin/A-Maze-Inc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Carte.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CARTE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CARTE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Mini_Carte.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//Passage de 2D à 1D : tab2D[x][y] = tab1D[x*dimy+y]</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classCarte.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCarte.html">Carte</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classCarte.html#ac05192c4de1abc2b401cc494583a6761">   18</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> * <a class="code" href="classCarte.html#ac05192c4de1abc2b401cc494583a6761">Tab_Carte</a> ;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classCarte.html#ac1c0c313b9dae573c7595f79b8ec07fe">   20</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCarte.html#ac1c0c313b9dae573c7595f79b8ec07fe">Nombre_Mini_Carte_X</a> ;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classCarte.html#ad467dbb5d7adde77b6aa6d2fae5cd631">   22</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCarte.html#ad467dbb5d7adde77b6aa6d2fae5cd631">Nombre_Mini_Carte_Y</a> ;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classCarte.html#aaec1d510294d1e787ba28fffb09fce00">   24</a></span>&#160;        <span class="keyword">class </span><a class="code" href="classMini__Carte.html">Mini_Carte</a> * <a class="code" href="classCarte.html#aaec1d510294d1e787ba28fffb09fce00">Tab_Mini_Carte</a> ;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classCarte.html#a4824c6dc3b7435f1653af395a6891a4d">   26</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCarte.html#a4824c6dc3b7435f1653af395a6891a4d">Taille_Carte_X</a> ;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classCarte.html#afac40958c8d8bb7e9ac1c328c384262c">   28</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCarte.html#afac40958c8d8bb7e9ac1c328c384262c">Taille_Carte_Y</a> ;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classCarte.html#a6842fb7279b10ca6304d46d5826e0d77">   30</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCarte.html#a6842fb7279b10ca6304d46d5826e0d77">Carte_Debut</a> ;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classCarte.html#aee0d9ac76de161ae4c53a6572932cbea">   32</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCarte.html#aee0d9ac76de161ae4c53a6572932cbea">Carte_Zone_Remarquable</a>[10][2] ;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#afc02711230cc93dae7585da8c1366506">Creer_Carte_Bordure</a>() ;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#a73f6f5b9425239ec0f99425b2e63c63a">Creer_Carte_Milieu</a>() ;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="classCarte.html#a06daaca86c31c80f8308f4a81d46dc9b">Carte</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="classCarte.html#a06daaca86c31c80f8308f4a81d46dc9b">Carte</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbX, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nbY);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="classCarte.html#a63300ff55c58b5d5b1674a3fc8f25910">~Carte</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCarte.html#a2d0d0c093f0baf8b3e3b4602821d9e0e">get_Tab_Carte</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y) <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#a5e1d007b47aac9993874dd83dad04c6a">set_Tab_Carte</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> entier_a_mettre) ;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#a9421170d4a06210f042763050b993cb4">get_Tab_Mini_Carte</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y,<span class="keyword">class</span> <a class="code" href="classMini__Carte.html">Mini_Carte</a> &amp; mc) ;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#a07a8f38a6629e2bfb0f7848d6a2aac79">set_Tab_Mini_Carte</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y,<span class="keyword">const</span> <span class="keyword">class</span> <a class="code" href="classMini__Carte.html">Mini_Carte</a> &amp; mc) ;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCarte.html#a2694daad332a0e9d369a31c7f7e4e07c">get_Taille_Carte_X</a> () <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCarte.html#a14ddc1a9a8294814245aeac4617293ed">get_Taille_Carte_Y</a>() <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCarte.html#aff4c87f90cfbd3594ecf1e4dead39a4a">get_Nombre_Mini_Carte_X</a> () <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCarte.html#a2957564cf7bb7f3c89954451a07fc318">get_Nombre_Mini_Carte_Y</a>() <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classCarte.html#a5fd5f24240d1b396d233c8f8399bd7c1">get_Carte_Debut</a>() ;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#af77de2066023dbca81ad829e991ea62b">Affiche_Carte</a>() ;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#a25abec889945b8d18025a6d4f6f12fe4">Affiche_Chemin</a>() ;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#a3736d5571557c8eeeb1ad33276133aef">Affiche_Mur</a>() ;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#a73d16df35abd20cb5241586ce25c26f9">Affiche_Mini_Carte</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y) ;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#a21c2e51e7e370a865e8830ec8f9ec17d">Creer_Carte</a>() ;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#aba841981d8fc6ce76fdd3cc8c088f2ef">Creer_Carte_Complet</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y) ;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#ac2ec8c8b7eefae8d54f0154de0d3c7cc">Poser_Mini_Carte</a>() ;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#a1dcf09737c325add43b3cd28d6dcb3b2">Desaloc_Carte</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCarte.html#ac46d39ddb17179add9f1f88823ba6755">Est_Ce_Que_Zone_Remarquable</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> x,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classCarte.html#a3d10ce082cb5476c7c94917a71db6d12">Test_Regression</a>() ;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif // CARTE_H</span></div>
+<div class="ttc" id="classCarte_html_a9421170d4a06210f042763050b993cb4"><div class="ttname"><a href="classCarte.html#a9421170d4a06210f042763050b993cb4">Carte::get_Tab_Mini_Carte</a></div><div class="ttdeci">void get_Tab_Mini_Carte(unsigned int x, unsigned int y, class Mini_Carte &amp;mc)</div><div class="ttdoc">Met dans mc la mini carte du tableau de la xème ligne et yème colonne. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:65</div></div>
+<div class="ttc" id="classCarte_html_af77de2066023dbca81ad829e991ea62b"><div class="ttname"><a href="classCarte.html#af77de2066023dbca81ad829e991ea62b">Carte::Affiche_Carte</a></div><div class="ttdeci">void Affiche_Carte()</div><div class="ttdoc">Affiche le tableau de jeu en entier. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:100</div></div>
+<div class="ttc" id="classCarte_html_a5fd5f24240d1b396d233c8f8399bd7c1"><div class="ttname"><a href="classCarte.html#a5fd5f24240d1b396d233c8f8399bd7c1">Carte::get_Carte_Debut</a></div><div class="ttdeci">unsigned int get_Carte_Debut()</div><div class="ttdoc">Retourne à l&#39;entrée de la carte. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:95</div></div>
+<div class="ttc" id="classCarte_html_a07a8f38a6629e2bfb0f7848d6a2aac79"><div class="ttname"><a href="classCarte.html#a07a8f38a6629e2bfb0f7848d6a2aac79">Carte::set_Tab_Mini_Carte</a></div><div class="ttdeci">void set_Tab_Mini_Carte(unsigned int x, unsigned int y, const class Mini_Carte &amp;mc)</div><div class="ttdoc">Transforme la mini carte de la xème ligne et yème colonne en mc. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:70</div></div>
+<div class="ttc" id="classCarte_html_a25abec889945b8d18025a6d4f6f12fe4"><div class="ttname"><a href="classCarte.html#a25abec889945b8d18025a6d4f6f12fe4">Carte::Affiche_Chemin</a></div><div class="ttdeci">void Affiche_Chemin()</div><div class="ttdoc">Affiche le(s) chemin(s) du tableau de jeu et met des espaces à la place des murs. ...</div><div class="ttdef"><b>Definition:</b> Carte.cpp:114</div></div>
+<div class="ttc" id="classCarte_html_a14ddc1a9a8294814245aeac4617293ed"><div class="ttname"><a href="classCarte.html#a14ddc1a9a8294814245aeac4617293ed">Carte::get_Taille_Carte_Y</a></div><div class="ttdeci">unsigned int get_Taille_Carte_Y() const </div><div class="ttdoc">Retourne la hauteur de la carte. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:80</div></div>
+<div class="ttc" id="classCarte_html_a63300ff55c58b5d5b1674a3fc8f25910"><div class="ttname"><a href="classCarte.html#a63300ff55c58b5d5b1674a3fc8f25910">Carte::~Carte</a></div><div class="ttdeci">~Carte()</div><div class="ttdoc">Destructeur. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:39</div></div>
+<div class="ttc" id="classCarte_html"><div class="ttname"><a href="classCarte.html">Carte</a></div><div class="ttdef"><b>Definition:</b> Carte.h:13</div></div>
+<div class="ttc" id="classCarte_html_a73d16df35abd20cb5241586ce25c26f9"><div class="ttname"><a href="classCarte.html#a73d16df35abd20cb5241586ce25c26f9">Carte::Affiche_Mini_Carte</a></div><div class="ttdeci">void Affiche_Mini_Carte(unsigned int x, unsigned int y)</div><div class="ttdoc">Affiche la mini-carte. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:160</div></div>
+<div class="ttc" id="classCarte_html_a6842fb7279b10ca6304d46d5826e0d77"><div class="ttname"><a href="classCarte.html#a6842fb7279b10ca6304d46d5826e0d77">Carte::Carte_Debut</a></div><div class="ttdeci">unsigned int Carte_Debut</div><div class="ttdoc">Numéro de la mini carte de début (en hauteur puisque son début est à 0 en longueur) ...</div><div class="ttdef"><b>Definition:</b> Carte.h:30</div></div>
+<div class="ttc" id="classCarte_html_a21c2e51e7e370a865e8830ec8f9ec17d"><div class="ttname"><a href="classCarte.html#a21c2e51e7e370a865e8830ec8f9ec17d">Carte::Creer_Carte</a></div><div class="ttdeci">void Creer_Carte()</div><div class="ttdoc">Crée un tableau de jeu "jouable". </div><div class="ttdef"><b>Definition:</b> Carte.cpp:165</div></div>
+<div class="ttc" id="classCarte_html_a3d10ce082cb5476c7c94917a71db6d12"><div class="ttname"><a href="classCarte.html#a3d10ce082cb5476c7c94917a71db6d12">Carte::Test_Regression</a></div><div class="ttdeci">void Test_Regression()</div><div class="ttdoc">Nombreux tests pour vérifier le bon fonctionnement de la classe. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:508</div></div>
+<div class="ttc" id="classCarte_html_a73f6f5b9425239ec0f99425b2e63c63a"><div class="ttname"><a href="classCarte.html#a73f6f5b9425239ec0f99425b2e63c63a">Carte::Creer_Carte_Milieu</a></div><div class="ttdeci">void Creer_Carte_Milieu()</div><div class="ttdoc">Crée la zone jouable de la carte (hors contour) </div><div class="ttdef"><b>Definition:</b> Carte.cpp:374</div></div>
+<div class="ttc" id="classCarte_html_a5e1d007b47aac9993874dd83dad04c6a"><div class="ttname"><a href="classCarte.html#a5e1d007b47aac9993874dd83dad04c6a">Carte::set_Tab_Carte</a></div><div class="ttdeci">void set_Tab_Carte(unsigned int x, unsigned int y, unsigned int entier_a_mettre)</div><div class="ttdoc">Transforme l&#39;entier de la xème ligne et yème colonne en entier_a_mettre. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:56</div></div>
+<div class="ttc" id="classCarte_html_ac1c0c313b9dae573c7595f79b8ec07fe"><div class="ttname"><a href="classCarte.html#ac1c0c313b9dae573c7595f79b8ec07fe">Carte::Nombre_Mini_Carte_X</a></div><div class="ttdeci">unsigned int Nombre_Mini_Carte_X</div><div class="ttdoc">Nombre de mini carte en longueur. </div><div class="ttdef"><b>Definition:</b> Carte.h:20</div></div>
+<div class="ttc" id="classCarte_html_aff4c87f90cfbd3594ecf1e4dead39a4a"><div class="ttname"><a href="classCarte.html#aff4c87f90cfbd3594ecf1e4dead39a4a">Carte::get_Nombre_Mini_Carte_X</a></div><div class="ttdeci">unsigned int get_Nombre_Mini_Carte_X() const </div><div class="ttdoc">Retourne le nombre de mini carte en longueur. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:85</div></div>
+<div class="ttc" id="classCarte_html_a1dcf09737c325add43b3cd28d6dcb3b2"><div class="ttname"><a href="classCarte.html#a1dcf09737c325add43b3cd28d6dcb3b2">Carte::Desaloc_Carte</a></div><div class="ttdeci">void Desaloc_Carte()</div><div class="ttdoc">Desalou la carte. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:547</div></div>
+<div class="ttc" id="classCarte_html_a3736d5571557c8eeeb1ad33276133aef"><div class="ttname"><a href="classCarte.html#a3736d5571557c8eeeb1ad33276133aef">Carte::Affiche_Mur</a></div><div class="ttdeci">void Affiche_Mur()</div><div class="ttdoc">Affiche les murs du tableau de jeu et met des espaces sur le(s) chemin(s) </div><div class="ttdef"><b>Definition:</b> Carte.cpp:137</div></div>
+<div class="ttc" id="classCarte_html_a2957564cf7bb7f3c89954451a07fc318"><div class="ttname"><a href="classCarte.html#a2957564cf7bb7f3c89954451a07fc318">Carte::get_Nombre_Mini_Carte_Y</a></div><div class="ttdeci">unsigned int get_Nombre_Mini_Carte_Y() const </div><div class="ttdoc">Retourne le nombre de mini carte en hauteur. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:90</div></div>
+<div class="ttc" id="classCarte_html_a2d0d0c093f0baf8b3e3b4602821d9e0e"><div class="ttname"><a href="classCarte.html#a2d0d0c093f0baf8b3e3b4602821d9e0e">Carte::get_Tab_Carte</a></div><div class="ttdeci">unsigned int get_Tab_Carte(unsigned int x, unsigned int y) const </div><div class="ttdoc">Retourne l&#39;entier du tableau de jeu de la xème ligne et yème colonne. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:47</div></div>
+<div class="ttc" id="classCarte_html_a4824c6dc3b7435f1653af395a6891a4d"><div class="ttname"><a href="classCarte.html#a4824c6dc3b7435f1653af395a6891a4d">Carte::Taille_Carte_X</a></div><div class="ttdeci">unsigned int Taille_Carte_X</div><div class="ttdoc">Longueur du tableau de jeu en prenant en compte les murs exterieurs. </div><div class="ttdef"><b>Definition:</b> Carte.h:26</div></div>
+<div class="ttc" id="classCarte_html_a06daaca86c31c80f8308f4a81d46dc9b"><div class="ttname"><a href="classCarte.html#a06daaca86c31c80f8308f4a81d46dc9b">Carte::Carte</a></div><div class="ttdeci">Carte()</div><div class="ttdoc">Constructeur par défault (pas forcément utile) </div><div class="ttdef"><b>Definition:</b> Carte.cpp:6</div></div>
+<div class="ttc" id="classCarte_html_ac05192c4de1abc2b401cc494583a6761"><div class="ttname"><a href="classCarte.html#ac05192c4de1abc2b401cc494583a6761">Carte::Tab_Carte</a></div><div class="ttdeci">unsigned int * Tab_Carte</div><div class="ttdoc">Tableau représentant le donjon dans sa globalité </div><div class="ttdef"><b>Definition:</b> Carte.h:18</div></div>
+<div class="ttc" id="classCarte_html_a2694daad332a0e9d369a31c7f7e4e07c"><div class="ttname"><a href="classCarte.html#a2694daad332a0e9d369a31c7f7e4e07c">Carte::get_Taille_Carte_X</a></div><div class="ttdeci">unsigned int get_Taille_Carte_X() const </div><div class="ttdoc">Retourne la longueur de la carte. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:75</div></div>
+<div class="ttc" id="classCarte_html_afac40958c8d8bb7e9ac1c328c384262c"><div class="ttname"><a href="classCarte.html#afac40958c8d8bb7e9ac1c328c384262c">Carte::Taille_Carte_Y</a></div><div class="ttdeci">unsigned int Taille_Carte_Y</div><div class="ttdoc">Hauteur du tableau de jeu en prenant en compte les murs exterieurs. </div><div class="ttdef"><b>Definition:</b> Carte.h:28</div></div>
+<div class="ttc" id="classCarte_html_aaec1d510294d1e787ba28fffb09fce00"><div class="ttname"><a href="classCarte.html#aaec1d510294d1e787ba28fffb09fce00">Carte::Tab_Mini_Carte</a></div><div class="ttdeci">class Mini_Carte * Tab_Mini_Carte</div><div class="ttdoc">Tableau représentant toutes les mini cartes du donjon. </div><div class="ttdef"><b>Definition:</b> Carte.h:24</div></div>
+<div class="ttc" id="classCarte_html_ad467dbb5d7adde77b6aa6d2fae5cd631"><div class="ttname"><a href="classCarte.html#ad467dbb5d7adde77b6aa6d2fae5cd631">Carte::Nombre_Mini_Carte_Y</a></div><div class="ttdeci">unsigned int Nombre_Mini_Carte_Y</div><div class="ttdoc">Nombre de mini carte en hauteur. </div><div class="ttdef"><b>Definition:</b> Carte.h:22</div></div>
+<div class="ttc" id="classCarte_html_ac2ec8c8b7eefae8d54f0154de0d3c7cc"><div class="ttname"><a href="classCarte.html#ac2ec8c8b7eefae8d54f0154de0d3c7cc">Carte::Poser_Mini_Carte</a></div><div class="ttdeci">void Poser_Mini_Carte()</div><div class="ttdoc">Créer toute les mini cartes en utilisant les carte présente dans "data/core/mini_map". </div><div class="ttdef"><b>Definition:</b> Carte.cpp:443</div></div>
+<div class="ttc" id="classCarte_html_ac46d39ddb17179add9f1f88823ba6755"><div class="ttname"><a href="classCarte.html#ac46d39ddb17179add9f1f88823ba6755">Carte::Est_Ce_Que_Zone_Remarquable</a></div><div class="ttdeci">bool Est_Ce_Que_Zone_Remarquable(unsigned int x, unsigned int y)</div><div class="ttdoc">renvoi vraix si Heros est dans zone remarquable </div><div class="ttdef"><b>Definition:</b> Carte.cpp:558</div></div>
+<div class="ttc" id="classCarte_html_aba841981d8fc6ce76fdd3cc8c088f2ef"><div class="ttname"><a href="classCarte.html#aba841981d8fc6ce76fdd3cc8c088f2ef">Carte::Creer_Carte_Complet</a></div><div class="ttdeci">void Creer_Carte_Complet(unsigned int x, unsigned int y)</div><div class="ttdoc">Crée un tableau de jeu comprenant carte et mini-cartes. </div><div class="ttdef"><b>Definition:</b> Carte.cpp:194</div></div>
+<div class="ttc" id="classMini__Carte_html"><div class="ttname"><a href="classMini__Carte.html">Mini_Carte</a></div><div class="ttdef"><b>Definition:</b> Mini_Carte.h:12</div></div>
+<div class="ttc" id="classCarte_html_afc02711230cc93dae7585da8c1366506"><div class="ttname"><a href="classCarte.html#afc02711230cc93dae7585da8c1366506">Carte::Creer_Carte_Bordure</a></div><div class="ttdeci">void Creer_Carte_Bordure()</div><div class="ttdoc">Crée le contour jouable de la carte (exception de la boucle) </div><div class="ttdef"><b>Definition:</b> Carte.cpp:233</div></div>
+<div class="ttc" id="classCarte_html_aee0d9ac76de161ae4c53a6572932cbea"><div class="ttname"><a href="classCarte.html#aee0d9ac76de161ae4c53a6572932cbea">Carte::Carte_Zone_Remarquable</a></div><div class="ttdeci">unsigned int Carte_Zone_Remarquable[10][2]</div><div class="ttdoc">Tableau des zones notables du jeu (boss et mini jeu) </div><div class="ttdef"><b>Definition:</b> Carte.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Lundi 1 Mai 2017 17:50:31 pour Damibin/A-Maze-Inc par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

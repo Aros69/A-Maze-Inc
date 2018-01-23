@@ -1,0 +1,233 @@
+\hypertarget{classHeros}{\section{RÃ©fÃ©rence de la classe Heros}
+\label{classHeros}\index{Heros@{Heros}}
+}
+
+
+Graphe de collaboration de Heros\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classHeros__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHeros_ab4c8bc5b87a080c5f609a65bfab62c48}{\hyperlink{classHeros_ab4c8bc5b87a080c5f609a65bfab62c48}{Heros} ()}\label{classHeros_ab4c8bc5b87a080c5f609a65bfab62c48}
+
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_afc479810b0afa0b44b6614e75022fa61}{\hyperlink{classHeros_afc479810b0afa0b44b6614e75022fa61}{$\sim$\+Heros} ()}\label{classHeros_afc479810b0afa0b44b6614e75022fa61}
+
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a1ab3741f207376436bd2ed3819005c9e}{void \hyperlink{classHeros_a1ab3741f207376436bd2ed3819005c9e}{Deplace\+\_\+\+Gauche} (const class \hyperlink{classMini__Carte}{Mini\+\_\+\+Carte} \&mc)}\label{classHeros_a1ab3741f207376436bd2ed3819005c9e}
+
+\begin{DoxyCompactList}\small\item\em Déplace le héros vers la gauche. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a1aa4518c19bdd51ef77752695cbb2520}{void \hyperlink{classHeros_a1aa4518c19bdd51ef77752695cbb2520}{Deplace\+\_\+\+Droite} (const class \hyperlink{classMini__Carte}{Mini\+\_\+\+Carte} \&mc)}\label{classHeros_a1aa4518c19bdd51ef77752695cbb2520}
+
+\begin{DoxyCompactList}\small\item\em Déplace le héros vers la droite. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a0863f6cb0b9789cf2123ec2b41dd680e}{void \hyperlink{classHeros_a0863f6cb0b9789cf2123ec2b41dd680e}{Deplace\+\_\+\+Bas} (const class \hyperlink{classMini__Carte}{Mini\+\_\+\+Carte} \&mc)}\label{classHeros_a0863f6cb0b9789cf2123ec2b41dd680e}
+
+\begin{DoxyCompactList}\small\item\em Déplace le héros vers le bas. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a9df03a11585acaf74ba6dbc6247a43a0}{void \hyperlink{classHeros_a9df03a11585acaf74ba6dbc6247a43a0}{Saut} (const class \hyperlink{classMini__Carte}{Mini\+\_\+\+Carte} \&mc)}\label{classHeros_a9df03a11585acaf74ba6dbc6247a43a0}
+
+\begin{DoxyCompactList}\small\item\em Déplace le héros vers le haut. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a8852cbba7889dfa7c983f915fafe9197}{void \hyperlink{classHeros_a8852cbba7889dfa7c983f915fafe9197}{Deplace\+\_\+\+Haut} (const class \hyperlink{classMini__Carte}{Mini\+\_\+\+Carte} \&mc)}\label{classHeros_a8852cbba7889dfa7c983f915fafe9197}
+
+\begin{DoxyCompactList}\small\item\em Déplace le héros vers le haut. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_aad37d9689ae2e36dafe3490ef437fee2}{void \hyperlink{classHeros_aad37d9689ae2e36dafe3490ef437fee2}{Gravite} (const class \hyperlink{classMini__Carte}{Mini\+\_\+\+Carte} \&mc)}\label{classHeros_aad37d9689ae2e36dafe3490ef437fee2}
+
+\begin{DoxyCompactList}\small\item\em Déplace automatiquement le joueur vers le bas s'il y a du vide sous lui. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_acdbd5d0db9cad6a5857bd1fd5a080506}{unsigned int \hyperlink{classHeros_acdbd5d0db9cad6a5857bd1fd5a080506}{Attaque\+\_\+\+Arme} (const \hyperlink{classMini__Carte}{Mini\+\_\+\+Carte} \&mini\+\_\+carte)}\label{classHeros_acdbd5d0db9cad6a5857bd1fd5a080506}
+
+\begin{DoxyCompactList}\small\item\em Le héros donne un coup d'épée \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a85c5fb4e165183d946a7c9dba57ca453}{unsigned int \hyperlink{classHeros_a85c5fb4e165183d946a7c9dba57ca453}{Attaque\+\_\+\+Magique} (const \hyperlink{classMini__Carte}{Mini\+\_\+\+Carte} \&mini\+\_\+carte, unsigned int \&posy)}\label{classHeros_a85c5fb4e165183d946a7c9dba57ca453}
+
+\begin{DoxyCompactList}\small\item\em Le héros utilise une attaque magique. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_afdfbbbffa4b29a990f518dd1c04860de}{bool \hyperlink{classHeros_afdfbbbffa4b29a990f518dd1c04860de}{Est\+\_\+\+Sur\+\_\+\+La\+\_\+\+Meme\+\_\+\+Case\+\_\+\+Que\+\_\+\+Ennemi} (const class \hyperlink{classMini__Carte}{Mini\+\_\+\+Carte} \&mc)}\label{classHeros_afdfbbbffa4b29a990f518dd1c04860de}
+
+\begin{DoxyCompactList}\small\item\em Vérifie si le héros est sur la même case que l'ennemi. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_ae9e361c189e86cb98728c0a9fd0b19a2}{unsigned int \hyperlink{classHeros_ae9e361c189e86cb98728c0a9fd0b19a2}{get\+\_\+\+Position\+\_\+\+X\+\_\+\+Mini\+\_\+\+Carte} () const }\label{classHeros_ae9e361c189e86cb98728c0a9fd0b19a2}
+
+\begin{DoxyCompactList}\small\item\em Retourne la position horizontale du héros sur la mini carte. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_afbd9ee91886d79725f7492a86df08e48}{unsigned int \hyperlink{classHeros_afbd9ee91886d79725f7492a86df08e48}{get\+\_\+\+Position\+\_\+\+Y\+\_\+\+Mini\+\_\+\+Carte} () const }\label{classHeros_afbd9ee91886d79725f7492a86df08e48}
+
+\begin{DoxyCompactList}\small\item\em Retourne la position verticale du héros sur la mini carte. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a8281961057b16c040ea1a5cf1f31b444}{unsigned int \hyperlink{classHeros_a8281961057b16c040ea1a5cf1f31b444}{get\+\_\+\+Position\+\_\+\+X\+\_\+\+Carte} () const }\label{classHeros_a8281961057b16c040ea1a5cf1f31b444}
+
+\begin{DoxyCompactList}\small\item\em Retourne la position horizontale du héros sur la carte. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a72a9b02182178b0331375e268095287e}{unsigned int \hyperlink{classHeros_a72a9b02182178b0331375e268095287e}{get\+\_\+\+Position\+\_\+\+Y\+\_\+\+Carte} () const }\label{classHeros_a72a9b02182178b0331375e268095287e}
+
+\begin{DoxyCompactList}\small\item\em Retourne la position verticale du héros sur la carte. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_ac95c44865ad78fa95cd6852405bc9924}{class \hyperlink{classEquipement}{Equipement} \hyperlink{classHeros_ac95c44865ad78fa95cd6852405bc9924}{get\+\_\+\+Equip} () const }\label{classHeros_ac95c44865ad78fa95cd6852405bc9924}
+
+\begin{DoxyCompactList}\small\item\em Retourne l'équipement du héros. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a82bcb8359b5cff6ea636555ddd6704ea}{char \hyperlink{classHeros_a82bcb8359b5cff6ea636555ddd6704ea}{get\+\_\+\+Orientation} () const }\label{classHeros_a82bcb8359b5cff6ea636555ddd6704ea}
+
+\begin{DoxyCompactList}\small\item\em Valeur représentant l'orientation du héros (droite ou gauche) \end{DoxyCompactList}\item 
+\hypertarget{classHeros_acd903282780fb0dda21023d8a3de58aa}{bool \hyperlink{classHeros_acd903282780fb0dda21023d8a3de58aa}{get\+\_\+\+Dans\+\_\+\+Air} () const }\label{classHeros_acd903282780fb0dda21023d8a3de58aa}
+
+\begin{DoxyCompactList}\small\item\em Retourne vrai si le héros est en l'air. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a7044d480461f205f2b70513d9c7d0a14}{unsigned int \hyperlink{classHeros_a7044d480461f205f2b70513d9c7d0a14}{get\+\_\+\+Moment\+\_\+\+Saut} () const }\label{classHeros_a7044d480461f205f2b70513d9c7d0a14}
+
+\begin{DoxyCompactList}\small\item\em Retourne la valeur indiquant le nombres de frames avant d'atteindre la hauteur maximale du saut. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a1025b99c446b291b36064209d49cdc18}{void \hyperlink{classHeros_a1025b99c446b291b36064209d49cdc18}{set\+\_\+\+Position\+\_\+\+X\+\_\+\+Mini\+\_\+\+Carte} (unsigned int Pos\+\_\+\+X\+\_\+\+Mini\+\_\+\+Carte\+\_\+nouv)}\label{classHeros_a1025b99c446b291b36064209d49cdc18}
+
+\begin{DoxyCompactList}\small\item\em Modifie la position horizontale du héros sur la mini carte. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a693fc2863548b61e06adafad9cb4e7e8}{void \hyperlink{classHeros_a693fc2863548b61e06adafad9cb4e7e8}{set\+\_\+\+Position\+\_\+\+Y\+\_\+\+Mini\+\_\+\+Carte} (unsigned int Pos\+\_\+\+Y\+\_\+\+Mini\+\_\+\+Carte\+\_\+nouv)}\label{classHeros_a693fc2863548b61e06adafad9cb4e7e8}
+
+\begin{DoxyCompactList}\small\item\em Modifie la position verticale du héros sur la mini carte. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a1aaa18f525afa970fcf68132b786f744}{void \hyperlink{classHeros_a1aaa18f525afa970fcf68132b786f744}{set\+\_\+\+Position\+\_\+\+X\+\_\+\+Carte} (unsigned int Pos\+\_\+\+X\+\_\+\+Carte\+\_\+nouv)}\label{classHeros_a1aaa18f525afa970fcf68132b786f744}
+
+\begin{DoxyCompactList}\small\item\em Modifie la position horizontale du héros sur la carte. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a1abed6db872afce6d7e1bf13132f8199}{void \hyperlink{classHeros_a1abed6db872afce6d7e1bf13132f8199}{set\+\_\+\+Position\+\_\+\+Y\+\_\+\+Carte} (unsigned int Pos\+\_\+\+Y\+\_\+\+Carte\+\_\+nouv)}\label{classHeros_a1abed6db872afce6d7e1bf13132f8199}
+
+\begin{DoxyCompactList}\small\item\em Modifie la position verticale du héros sur la carte. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a498a0115400e870e77b806f99193f1e3}{void \hyperlink{classHeros_a498a0115400e870e77b806f99193f1e3}{set\+\_\+\+Heros} (string Nom\+\_\+\+Fic)}\label{classHeros_a498a0115400e870e77b806f99193f1e3}
+
+\begin{DoxyCompactList}\small\item\em Charge les caractéristiques du héros par un fichier passé en paramètre. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_ae6470108544a5db9e6a274521f7475fc}{string \hyperlink{classHeros_ae6470108544a5db9e6a274521f7475fc}{get\+\_\+\+Nom} () const }\label{classHeros_ae6470108544a5db9e6a274521f7475fc}
+
+\begin{DoxyCompactList}\small\item\em Retourne le nom du porteur de ces statistiques. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_adca0a671d53bc4fa252086ad3c3e109c}{unsigned int \hyperlink{classHeros_adca0a671d53bc4fa252086ad3c3e109c}{get\+\_\+\+Point\+\_\+\+De\+\_\+\+Vie} () const }\label{classHeros_adca0a671d53bc4fa252086ad3c3e109c}
+
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de point de vie. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a8275151a09621cdacbacba3346b5689b}{unsigned int \hyperlink{classHeros_a8275151a09621cdacbacba3346b5689b}{get\+\_\+\+Point\+\_\+\+De\+\_\+\+Vie\+\_\+\+Max} () const }\label{classHeros_a8275151a09621cdacbacba3346b5689b}
+
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de point de vie maximal. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a0e30fcf2835c7c6daadbcb7c68e38c19}{unsigned int \hyperlink{classHeros_a0e30fcf2835c7c6daadbcb7c68e38c19}{get\+\_\+\+Mana} () const }\label{classHeros_a0e30fcf2835c7c6daadbcb7c68e38c19}
+
+\begin{DoxyCompactList}\small\item\em Retourne la valeur de la mana. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a7f7cc1149bd9276ef60f714d3da07cc6}{unsigned int \hyperlink{classHeros_a7f7cc1149bd9276ef60f714d3da07cc6}{get\+\_\+\+Mana\+\_\+\+Max} () const }\label{classHeros_a7f7cc1149bd9276ef60f714d3da07cc6}
+
+\begin{DoxyCompactList}\small\item\em Retourne la valeur de la mana maximale. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a2e42d9c0d54a54b82677e1357c6eff43}{unsigned int \hyperlink{classHeros_a2e42d9c0d54a54b82677e1357c6eff43}{get\+\_\+\+Experience\+\_\+\+Restant} () const }\label{classHeros_a2e42d9c0d54a54b82677e1357c6eff43}
+
+\begin{DoxyCompactList}\small\item\em Retourne la valeur de l'expérience restante pour atteindre le niveau supérieur. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_aa1562273d1fbe64dce89f10552838e5e}{unsigned int \hyperlink{classHeros_aa1562273d1fbe64dce89f10552838e5e}{get\+\_\+\+Experience\+\_\+\+Donne} () const }\label{classHeros_aa1562273d1fbe64dce89f10552838e5e}
+
+\begin{DoxyCompactList}\small\item\em Retourne la valeur de l'expérience. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a108294bd3249b8edf2946a0efd285bc8}{unsigned int \hyperlink{classHeros_a108294bd3249b8edf2946a0efd285bc8}{get\+\_\+\+Niveau} () const }\label{classHeros_a108294bd3249b8edf2946a0efd285bc8}
+
+\begin{DoxyCompactList}\small\item\em Retourne la valeur représentant le niveau actuel. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_adfbef4da5190db2dd5ecead2ebc0b63e}{unsigned int \hyperlink{classHeros_adfbef4da5190db2dd5ecead2ebc0b63e}{get\+\_\+\+Force} () const }\label{classHeros_adfbef4da5190db2dd5ecead2ebc0b63e}
+
+\begin{DoxyCompactList}\small\item\em Retourne la valeur de la force actuelle. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_aeeac5faf198714cc15d1f7f9f71c1b5b}{unsigned int \hyperlink{classHeros_aeeac5faf198714cc15d1f7f9f71c1b5b}{get\+\_\+\+Intelligence} () const }\label{classHeros_aeeac5faf198714cc15d1f7f9f71c1b5b}
+
+\begin{DoxyCompactList}\small\item\em Retourne la valeur de l'intelligence actuelle. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a9710a6746b20ef3734135aad266fe5b2}{unsigned int \hyperlink{classHeros_a9710a6746b20ef3734135aad266fe5b2}{get\+\_\+\+Agilite} () const }\label{classHeros_a9710a6746b20ef3734135aad266fe5b2}
+
+\begin{DoxyCompactList}\small\item\em Retourne la valeur de l'agilité actuelle. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a2be2dafc6dc7a0bfc6466752818d933b}{unsigned int \hyperlink{classHeros_a2be2dafc6dc7a0bfc6466752818d933b}{get\+\_\+\+Recharge\+\_\+\+Magique} () const }\label{classHeros_a2be2dafc6dc7a0bfc6466752818d933b}
+
+\begin{DoxyCompactList}\small\item\em Retourne 0 si l'attaque magique n'a pas été utilisée, 1 autrement. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a3a9647675481c08e1c775048934886db}{void \hyperlink{classHeros_a3a9647675481c08e1c775048934886db}{set\+\_\+\+Nom} (string nom)}\label{classHeros_a3a9647675481c08e1c775048934886db}
+
+\begin{DoxyCompactList}\small\item\em Edite le nom du porteur de ces statistiques. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a4fe94621d03696f4e6cb6bcc3bb2f700}{void \hyperlink{classHeros_a4fe94621d03696f4e6cb6bcc3bb2f700}{set\+\_\+\+Point\+\_\+\+De\+\_\+\+Vie} (unsigned int Pv)}\label{classHeros_a4fe94621d03696f4e6cb6bcc3bb2f700}
+
+\begin{DoxyCompactList}\small\item\em Edite le nombre de point de vie actuel. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_adc3bb532cfb79648a702a1d937def60f}{void \hyperlink{classHeros_adc3bb532cfb79648a702a1d937def60f}{set\+\_\+\+Point\+\_\+\+De\+\_\+\+Vie\+\_\+\+Max} (unsigned int Pv\+\_\+\+Max)}\label{classHeros_adc3bb532cfb79648a702a1d937def60f}
+
+\begin{DoxyCompactList}\small\item\em Edite le nombre de point de vie maximal. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_ad34f0dbcac907cb22c76843295b6afbb}{void \hyperlink{classHeros_ad34f0dbcac907cb22c76843295b6afbb}{set\+\_\+\+Mana} (unsigned int Mana\+\_\+nouv)}\label{classHeros_ad34f0dbcac907cb22c76843295b6afbb}
+
+\begin{DoxyCompactList}\small\item\em Edite la valeur de la mana actuelle. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a293d791af2ded893069d5b9393a44864}{void \hyperlink{classHeros_a293d791af2ded893069d5b9393a44864}{set\+\_\+\+Mana\+\_\+\+Max} (unsigned int Mana\+\_\+\+Max\+\_\+nouv)}\label{classHeros_a293d791af2ded893069d5b9393a44864}
+
+\begin{DoxyCompactList}\small\item\em Edite la valeur de la mana maximale. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_ae2b52ed0b4d58c269135a7d5d0b6612c}{void \hyperlink{classHeros_ae2b52ed0b4d58c269135a7d5d0b6612c}{set\+\_\+\+Experience\+\_\+\+Restant} (unsigned int Exp\+\_\+rest)}\label{classHeros_ae2b52ed0b4d58c269135a7d5d0b6612c}
+
+\begin{DoxyCompactList}\small\item\em Edite la valeur de l'expérience restante. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a1ae5d424a5a2389c1cc644f5b98222b1}{void \hyperlink{classHeros_a1ae5d424a5a2389c1cc644f5b98222b1}{set\+\_\+\+Experience\+\_\+\+Donne} (unsigned int Exp\+\_\+don)}\label{classHeros_a1ae5d424a5a2389c1cc644f5b98222b1}
+
+\begin{DoxyCompactList}\small\item\em Edite la valeur de l'expérience donnée \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a90ff048d31dc1306daa51de0f2ca55f8}{void \hyperlink{classHeros_a90ff048d31dc1306daa51de0f2ca55f8}{set\+\_\+\+Niveau} (unsigned int Niveau\+\_\+nouv)}\label{classHeros_a90ff048d31dc1306daa51de0f2ca55f8}
+
+\begin{DoxyCompactList}\small\item\em Edite la valeur représentant le niveau actuel. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a1e807d145b84ab55947bcc4a9e708550}{void \hyperlink{classHeros_a1e807d145b84ab55947bcc4a9e708550}{set\+\_\+\+Force} (unsigned int Force\+\_\+nouv)}\label{classHeros_a1e807d145b84ab55947bcc4a9e708550}
+
+\begin{DoxyCompactList}\small\item\em Edite la valeur représentant la force. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_ad2aeb2a7a7fda8a132aedf675887144e}{void \hyperlink{classHeros_ad2aeb2a7a7fda8a132aedf675887144e}{set\+\_\+\+Intelligence} (unsigned int Intel\+\_\+nouv)}\label{classHeros_ad2aeb2a7a7fda8a132aedf675887144e}
+
+\begin{DoxyCompactList}\small\item\em Edite la valeur représentant l'intelligence. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a086e989118fe38b6704ad1c76970c054}{void \hyperlink{classHeros_a086e989118fe38b6704ad1c76970c054}{set\+\_\+\+Agilite} (unsigned int Agilite\+\_\+nouv)}\label{classHeros_a086e989118fe38b6704ad1c76970c054}
+
+\begin{DoxyCompactList}\small\item\em Edite la valeur représentant l'agilité \end{DoxyCompactList}\item 
+\hypertarget{classHeros_aeddf3d6c268229136d35e48adffad876}{class \hyperlink{classStatistiques}{Statistiques} \hyperlink{classHeros_aeddf3d6c268229136d35e48adffad876}{get\+\_\+\+Stats} () const }\label{classHeros_aeddf3d6c268229136d35e48adffad876}
+
+\begin{DoxyCompactList}\small\item\em Retourne les statistiques du héros. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a6da202f5e53c2089a4b696d4d8f1e3a0}{void \hyperlink{classHeros_a6da202f5e53c2089a4b696d4d8f1e3a0}{set\+\_\+\+Stats} (class \hyperlink{classStatistiques}{Statistiques} sta)}\label{classHeros_a6da202f5e53c2089a4b696d4d8f1e3a0}
+
+\begin{DoxyCompactList}\small\item\em Modifie les staistiques du héros. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a888eee9285c20599dfe9bfd71116f9b0}{void \hyperlink{classHeros_a888eee9285c20599dfe9bfd71116f9b0}{set\+\_\+\+Equip} (class \hyperlink{classEquipement}{Equipement} Equip\+\_\+nouv)}\label{classHeros_a888eee9285c20599dfe9bfd71116f9b0}
+
+\begin{DoxyCompactList}\small\item\em Modifie l'équipement du héros. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_ae600cac0cd4996ef94c2f48dfd25cffd}{void \hyperlink{classHeros_ae600cac0cd4996ef94c2f48dfd25cffd}{set\+\_\+\+Dans\+\_\+\+Air} (bool dans\+\_\+air)}\label{classHeros_ae600cac0cd4996ef94c2f48dfd25cffd}
+
+\begin{DoxyCompactList}\small\item\em Modifier le booléen dans les airs. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a2fb28d1416077f376d0de0c17df4586a}{void \hyperlink{classHeros_a2fb28d1416077f376d0de0c17df4586a}{set\+\_\+\+Moment\+\_\+\+Saut} (unsigned int moment\+\_\+saut)}\label{classHeros_a2fb28d1416077f376d0de0c17df4586a}
+
+\begin{DoxyCompactList}\small\item\em Edite la valeur indiquant le nombres de frames avant d'atteindre la hauteur max du saut. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_abffc63a9686764b72a51ed7545f21bae}{void \hyperlink{classHeros_abffc63a9686764b72a51ed7545f21bae}{set\+\_\+\+Orientation} (char orientation)}\label{classHeros_abffc63a9686764b72a51ed7545f21bae}
+
+\begin{DoxyCompactList}\small\item\em Edite la valeur représentant l'orientation du héros. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a20f7302ed558b7dec2a77a866fc4c664}{void \hyperlink{classHeros_a20f7302ed558b7dec2a77a866fc4c664}{set\+\_\+\+Recharge\+\_\+\+Magique} (unsigned int Rech\+\_\+\+Mag\+\_\+nouv)}\label{classHeros_a20f7302ed558b7dec2a77a866fc4c664}
+
+\begin{DoxyCompactList}\small\item\em Edite la valeur de recharge pour l'attaque magique. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a4f9571a9762f1864c7bda5778e804a78}{bool \hyperlink{classHeros_a4f9571a9762f1864c7bda5778e804a78}{Est\+\_\+\+Sur\+\_\+\+Meme\+\_\+\+Case\+\_\+\+Que\+\_\+\+Ennemi} (\hyperlink{classEnnemis}{Ennemis} mechant)}\label{classHeros_a4f9571a9762f1864c7bda5778e804a78}
+
+\begin{DoxyCompactList}\small\item\em Vérifie si le heros est sur la même case que un ennemis. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_ad33e05d432c9d5ef65791269be75dc64}{bool \hyperlink{classHeros_ad33e05d432c9d5ef65791269be75dc64}{Meurt} ()}\label{classHeros_ad33e05d432c9d5ef65791269be75dc64}
+
+\begin{DoxyCompactList}\small\item\em Vérifie si l'ennemi est mort (s'il n'a plus de point de vie) \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a42dd604e21c7dbccac34bf34722cbfc1}{void \hyperlink{classHeros_a42dd604e21c7dbccac34bf34722cbfc1}{Prends\+\_\+\+Degats} (unsigned int degats)}\label{classHeros_a42dd604e21c7dbccac34bf34722cbfc1}
+
+\begin{DoxyCompactList}\small\item\em procedure qui modifie les points de vie (prend des degats) \end{DoxyCompactList}\item 
+\hypertarget{classHeros_ae351fdf6109e6d31ea9682357f9ab69f}{void \hyperlink{classHeros_ae351fdf6109e6d31ea9682357f9ab69f}{Test\+\_\+\+Regression} ()}\label{classHeros_ae351fdf6109e6d31ea9682357f9ab69f}
+
+\begin{DoxyCompactList}\small\item\em Test de régression de la classe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privÃ©s}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHeros_a1e3507b6d6a17aadb366210b7e6745a6}{\hyperlink{classEquipement}{Equipement} \hyperlink{classHeros_a1e3507b6d6a17aadb366210b7e6745a6}{Equip}}\label{classHeros_a1e3507b6d6a17aadb366210b7e6745a6}
+
+\begin{DoxyCompactList}\small\item\em Lien sur l'équipement du héros. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a2642c96cb65867a79fe9b891614cad09}{unsigned int \hyperlink{classHeros_a2642c96cb65867a79fe9b891614cad09}{Position\+\_\+\+X\+\_\+\+Mini\+\_\+\+Carte}}\label{classHeros_a2642c96cb65867a79fe9b891614cad09}
+
+\begin{DoxyCompactList}\small\item\em Valeur représentant la position horizontale du héros sur la mini carte. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a3d9b6676d9a64786bb8078171c9f9b21}{unsigned int \hyperlink{classHeros_a3d9b6676d9a64786bb8078171c9f9b21}{Position\+\_\+\+Y\+\_\+\+Mini\+\_\+\+Carte}}\label{classHeros_a3d9b6676d9a64786bb8078171c9f9b21}
+
+\begin{DoxyCompactList}\small\item\em Valeur représentant la position verticale du héros sur la mini carte. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_ab72ce9d7368b401d5ca04da568ea0556}{unsigned int \hyperlink{classHeros_ab72ce9d7368b401d5ca04da568ea0556}{Position\+\_\+\+X\+\_\+\+Carte}}\label{classHeros_ab72ce9d7368b401d5ca04da568ea0556}
+
+\begin{DoxyCompactList}\small\item\em Valeur représentant la position horizontale du héros sur la carte. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_ad0b4d91ee20984e9e93c5d97fc4f518d}{unsigned int \hyperlink{classHeros_ad0b4d91ee20984e9e93c5d97fc4f518d}{Position\+\_\+\+Y\+\_\+\+Carte}}\label{classHeros_ad0b4d91ee20984e9e93c5d97fc4f518d}
+
+\begin{DoxyCompactList}\small\item\em Valeur représentant la position verticale du héros sur la carte. \end{DoxyCompactList}\item 
+char \hyperlink{classHeros_a433eba419144c9e3339c6440a1543a12}{Orientation}
+\item 
+\hypertarget{classHeros_aafcea07af66b16ae9cd4a302b3787a06}{bool \hyperlink{classHeros_aafcea07af66b16ae9cd4a302b3787a06}{Dans\+\_\+\+Air}}\label{classHeros_aafcea07af66b16ae9cd4a302b3787a06}
+
+\begin{DoxyCompactList}\small\item\em Booléen vrai si le héros est dans les airs. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a5dda220500c2db37d9a86377cc3ab165}{unsigned int \hyperlink{classHeros_a5dda220500c2db37d9a86377cc3ab165}{Moment\+\_\+\+Saut}}\label{classHeros_a5dda220500c2db37d9a86377cc3ab165}
+
+\begin{DoxyCompactList}\small\item\em Entier entre 0 et 2 indiquant le nombres de frames avant d'atteindre la hauteur maximale du saut. \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a3edd1240565c50917c8788731c5952ae}{unsigned int \hyperlink{classHeros_a3edd1240565c50917c8788731c5952ae}{Recharge\+\_\+\+Magique}}\label{classHeros_a3edd1240565c50917c8788731c5952ae}
+
+\begin{DoxyCompactList}\small\item\em Indique si l'attaque magique à déjà été utilisée \end{DoxyCompactList}\item 
+\hypertarget{classHeros_a695eafe0f97645608064073ed46bf123}{\hyperlink{classStatistiques}{Statistiques} \hyperlink{classHeros_a695eafe0f97645608064073ed46bf123}{Stats}}\label{classHeros_a695eafe0f97645608064073ed46bf123}
+
+\begin{DoxyCompactList}\small\item\em Lien sur les statistiques du héros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des donnÃ©es membres}
+\hypertarget{classHeros_a433eba419144c9e3339c6440a1543a12}{\index{Heros@{Heros}!Orientation@{Orientation}}
+\index{Orientation@{Orientation}!Heros@{Heros}}
+\subsubsection[{Orientation}]{\setlength{\rightskip}{0pt plus 5cm}char Heros\+::\+Orientation\hspace{0.3cm}{\ttfamily [private]}}}\label{classHeros_a433eba419144c9e3339c6440a1543a12}
+Valeur représentant l'orientation du héros g ou d 
+
+La documentation de cette classe a Ã©tÃ© gÃ©nÃ©rÃ©e Ã  partir des fichiers suivants \+:\begin{DoxyCompactItemize}
+\item 
+src/include/Heros.\+h\item 
+src/cpp/Heros.\+cpp\end{DoxyCompactItemize}

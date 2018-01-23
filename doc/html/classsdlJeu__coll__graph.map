@@ -1,0 +1,11 @@
+<map id="sdlJeu" name="sdlJeu">
+<area shape="rect" id="node2" href="$classJeu.html" title="Jeu" alt="" coords="301,392,344,419"/>
+<area shape="rect" id="node3" href="$classCarte.html" title="Carte" alt="" coords="15,303,70,329"/>
+<area shape="rect" id="node5" href="$classEnnemis.html" title="Ennemis" alt="" coords="83,213,157,240"/>
+<area shape="rect" id="node7" href="$classStatistiques.html" title="Statistiques" alt="" coords="187,95,277,121"/>
+<area shape="rect" id="node11" href="$classMini__Carte.html" title="Mini_Carte" alt="" coords="363,154,448,181"/>
+<area shape="rect" id="node8" href="$classHeros.html" title="Heros" alt="" coords="294,303,351,329"/>
+<area shape="rect" id="node9" href="$classEquipement.html" title="Equipement" alt="" coords="291,213,381,240"/>
+<area shape="rect" id="node10" href="$classMini__Jeux0.html" title="Mini_Jeux0" alt="" coords="456,303,544,329"/>
+<area shape="rect" id="node12" href="$classImage.html" title="Pour gérer une image avec SDL2. " alt="" coords="368,392,427,419"/>
+</map>

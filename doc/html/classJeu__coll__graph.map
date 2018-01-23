@@ -1,0 +1,9 @@
+<map id="Jeu" name="Jeu">
+<area shape="rect" id="node2" href="$classCarte.html" title="Carte" alt="" coords="15,303,70,329"/>
+<area shape="rect" id="node4" href="$classEnnemis.html" title="Ennemis" alt="" coords="83,213,157,240"/>
+<area shape="rect" id="node6" href="$classStatistiques.html" title="Statistiques" alt="" coords="187,95,277,121"/>
+<area shape="rect" id="node10" href="$classMini__Carte.html" title="Mini_Carte" alt="" coords="363,154,448,181"/>
+<area shape="rect" id="node7" href="$classHeros.html" title="Heros" alt="" coords="294,303,351,329"/>
+<area shape="rect" id="node8" href="$classEquipement.html" title="Equipement" alt="" coords="291,213,381,240"/>
+<area shape="rect" id="node9" href="$classMini__Jeux0.html" title="Mini_Jeux0" alt="" coords="456,303,544,329"/>
+</map>

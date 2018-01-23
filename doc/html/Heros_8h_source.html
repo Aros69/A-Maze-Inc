@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Damibin/A-Maze-Inc:  Fichier source de src/include/Heros.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Damibin/A-Maze-Inc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- GÃ©nÃ©rÃ© par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Heros.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef HEROS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define HEROS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Statistiques.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Equipement.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Mini_Carte.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Ennemis.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classHeros.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classHeros.html">Heros</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classHeros.html#a1e3507b6d6a17aadb366210b7e6745a6">   18</a></span>&#160;         <a class="code" href="classEquipement.html">Equipement</a> <a class="code" href="classHeros.html#a1e3507b6d6a17aadb366210b7e6745a6">Equip</a> ;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classHeros.html#a2642c96cb65867a79fe9b891614cad09">   20</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classHeros.html#a2642c96cb65867a79fe9b891614cad09">Position_X_Mini_Carte</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classHeros.html#a3d9b6676d9a64786bb8078171c9f9b21">   22</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classHeros.html#a3d9b6676d9a64786bb8078171c9f9b21">Position_Y_Mini_Carte</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classHeros.html#ab72ce9d7368b401d5ca04da568ea0556">   24</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classHeros.html#ab72ce9d7368b401d5ca04da568ea0556">Position_X_Carte</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classHeros.html#ad0b4d91ee20984e9e93c5d97fc4f518d">   26</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classHeros.html#ad0b4d91ee20984e9e93c5d97fc4f518d">Position_Y_Carte</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classHeros.html#a433eba419144c9e3339c6440a1543a12">   28</a></span>&#160;        <span class="keywordtype">char</span> <a class="code" href="classHeros.html#a433eba419144c9e3339c6440a1543a12">Orientation</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classHeros.html#aafcea07af66b16ae9cd4a302b3787a06">   30</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classHeros.html#aafcea07af66b16ae9cd4a302b3787a06">Dans_Air</a> ;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classHeros.html#a5dda220500c2db37d9a86377cc3ab165">   32</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classHeros.html#a5dda220500c2db37d9a86377cc3ab165">Moment_Saut</a> ;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classHeros.html#a3edd1240565c50917c8788731c5952ae">   34</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classHeros.html#a3edd1240565c50917c8788731c5952ae">Recharge_Magique</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classHeros.html#a695eafe0f97645608064073ed46bf123">   36</a></span>&#160;        <a class="code" href="classStatistiques.html">Statistiques</a> <a class="code" href="classHeros.html#a695eafe0f97645608064073ed46bf123">Stats</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classHeros.html">Heros</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        ~<a class="code" href="classHeros.html">Heros</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> Deplace_Gauche(<span class="keyword">const</span> <span class="keyword">class</span> <a class="code" href="classMini__Carte.html">Mini_Carte</a> &amp; mc);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> Deplace_Droite(<span class="keyword">const</span> <span class="keyword">class</span> <a class="code" href="classMini__Carte.html">Mini_Carte</a> &amp; mc);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> Deplace_Bas(<span class="keyword">const</span> <span class="keyword">class</span> <a class="code" href="classMini__Carte.html">Mini_Carte</a> &amp; mc);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> Saut(<span class="keyword">const</span> <span class="keyword">class</span> <a class="code" href="classMini__Carte.html">Mini_Carte</a> &amp; mc);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> Deplace_Haut(<span class="keyword">const</span> <span class="keyword">class</span> <a class="code" href="classMini__Carte.html">Mini_Carte</a> &amp; mc);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">void</span> Gravite(<span class="keyword">const</span> <span class="keyword">class</span> <a class="code" href="classMini__Carte.html">Mini_Carte</a> &amp; mc);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Attaque_Arme(<span class="keyword">const</span> <a class="code" href="classMini__Carte.html">Mini_Carte</a> &amp; mini_carte);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Attaque_Magique(<span class="keyword">const</span> <a class="code" href="classMini__Carte.html">Mini_Carte</a> &amp; mini_carte,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp; posy);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">bool</span> Est_Sur_La_Meme_Case_Que_Ennemi(<span class="keyword">const</span> <span class="keyword">class</span> <a class="code" href="classMini__Carte.html">Mini_Carte</a> &amp; mc);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Position_X_Mini_Carte() <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Position_Y_Mini_Carte() <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Position_X_Carte() <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Position_Y_Carte() <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">class </span><a class="code" href="classEquipement.html">Equipement</a> get_Equip() const;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">char</span> get_Orientation() <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">bool</span> get_Dans_Air() <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Moment_Saut() <span class="keyword">const</span> ;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> set_Position_X_Mini_Carte(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Pos_X_Mini_Carte_nouv);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">void</span> set_Position_Y_Mini_Carte(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Pos_Y_Mini_Carte_nouv);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">void</span> set_Position_X_Carte(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Pos_X_Carte_nouv);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">void</span> set_Position_Y_Carte(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Pos_Y_Carte_nouv);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">void</span> set_Heros(<span class="keywordtype">string</span> Nom_Fic);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordtype">string</span> get_Nom()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Point_De_Vie()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Point_De_Vie_Max()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Mana()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Mana_Max()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Experience_Restant()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Experience_Donne()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Niveau()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Force()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Intelligence()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Agilite()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> get_Recharge_Magique()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordtype">void</span> set_Nom(<span class="keywordtype">string</span> nom);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordtype">void</span> set_Point_De_Vie(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Pv);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordtype">void</span> set_Point_De_Vie_Max(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Pv_Max);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordtype">void</span> set_Mana(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Mana_nouv);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordtype">void</span> set_Mana_Max(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Mana_Max_nouv);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordtype">void</span> set_Experience_Restant(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Exp_rest);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordtype">void</span> set_Experience_Donne(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Exp_don);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordtype">void</span> set_Niveau(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Niveau_nouv);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordtype">void</span> set_Force(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Force_nouv);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordtype">void</span> set_Intelligence(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Intel_nouv);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordtype">void</span> set_Agilite(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Agilite_nouv);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keyword">class </span><a class="code" href="classStatistiques.html">Statistiques</a> get_Stats()const;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordtype">void</span> set_Stats(<span class="keyword">class</span> <a class="code" href="classStatistiques.html">Statistiques</a> sta);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordtype">void</span> set_Equip(<span class="keyword">class</span> <a class="code" href="classEquipement.html">Equipement</a> Equip_nouv);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordtype">void</span> set_Dans_Air (<span class="keywordtype">bool</span> dans_air) ;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordtype">void</span> set_Moment_Saut (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> moment_saut) ;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordtype">void</span> set_Orientation (<span class="keywordtype">char</span> orientation) ;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordtype">void</span> set_Recharge_Magique(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Rech_Mag_nouv);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordtype">bool</span> Est_Sur_Meme_Case_Que_Ennemi(<a class="code" href="classEnnemis.html">Ennemis</a> mechant) ;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordtype">bool</span> Meurt();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordtype">void</span> Prends_Degats(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> degats);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classStatistiques.html#ab1489e49a99b51b0ecac2b970cdd0a32">Test_Regression</a>();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;};</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#endif // HEROS_H</span></div>
+<div class="ttc" id="classHeros_html_a5dda220500c2db37d9a86377cc3ab165"><div class="ttname"><a href="classHeros.html#a5dda220500c2db37d9a86377cc3ab165">Heros::Moment_Saut</a></div><div class="ttdeci">unsigned int Moment_Saut</div><div class="ttdoc">Entier entre 0 et 2 indiquant le nombres de frames avant d&#39;atteindre la hauteur maximale du saut...</div><div class="ttdef"><b>Definition:</b> Heros.h:32</div></div>
+<div class="ttc" id="classHeros_html_a3d9b6676d9a64786bb8078171c9f9b21"><div class="ttname"><a href="classHeros.html#a3d9b6676d9a64786bb8078171c9f9b21">Heros::Position_Y_Mini_Carte</a></div><div class="ttdeci">unsigned int Position_Y_Mini_Carte</div><div class="ttdoc">Valeur représentant la position verticale du héros sur la mini carte. </div><div class="ttdef"><b>Definition:</b> Heros.h:22</div></div>
+<div class="ttc" id="classHeros_html_ab72ce9d7368b401d5ca04da568ea0556"><div class="ttname"><a href="classHeros.html#ab72ce9d7368b401d5ca04da568ea0556">Heros::Position_X_Carte</a></div><div class="ttdeci">unsigned int Position_X_Carte</div><div class="ttdoc">Valeur représentant la position horizontale du héros sur la carte. </div><div class="ttdef"><b>Definition:</b> Heros.h:24</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classStatistiques_html_ab1489e49a99b51b0ecac2b970cdd0a32"><div class="ttname"><a href="classStatistiques.html#ab1489e49a99b51b0ecac2b970cdd0a32">Statistiques::Test_Regression</a></div><div class="ttdeci">void Test_Regression()</div><div class="ttdoc">Permet de teste si cela fonctionne corectement. </div><div class="ttdef"><b>Definition:</b> Statistiques.cpp:148</div></div>
+<div class="ttc" id="classHeros_html"><div class="ttname"><a href="classHeros.html">Heros</a></div><div class="ttdef"><b>Definition:</b> Heros.h:14</div></div>
+<div class="ttc" id="classStatistiques_html"><div class="ttname"><a href="classStatistiques.html">Statistiques</a></div><div class="ttdef"><b>Definition:</b> Statistiques.h:11</div></div>
+<div class="ttc" id="classHeros_html_a1e3507b6d6a17aadb366210b7e6745a6"><div class="ttname"><a href="classHeros.html#a1e3507b6d6a17aadb366210b7e6745a6">Heros::Equip</a></div><div class="ttdeci">Equipement Equip</div><div class="ttdoc">Lien sur l&#39;équipement du héros. </div><div class="ttdef"><b>Definition:</b> Heros.h:18</div></div>
+<div class="ttc" id="classHeros_html_a433eba419144c9e3339c6440a1543a12"><div class="ttname"><a href="classHeros.html#a433eba419144c9e3339c6440a1543a12">Heros::Orientation</a></div><div class="ttdeci">char Orientation</div><div class="ttdef"><b>Definition:</b> Heros.h:28</div></div>
+<div class="ttc" id="classHeros_html_a2642c96cb65867a79fe9b891614cad09"><div class="ttname"><a href="classHeros.html#a2642c96cb65867a79fe9b891614cad09">Heros::Position_X_Mini_Carte</a></div><div class="ttdeci">unsigned int Position_X_Mini_Carte</div><div class="ttdoc">Valeur représentant la position horizontale du héros sur la mini carte. </div><div class="ttdef"><b>Definition:</b> Heros.h:20</div></div>
+<div class="ttc" id="classEquipement_html"><div class="ttname"><a href="classEquipement.html">Equipement</a></div><div class="ttdef"><b>Definition:</b> Equipement.h:12</div></div>
+<div class="ttc" id="classHeros_html_aafcea07af66b16ae9cd4a302b3787a06"><div class="ttname"><a href="classHeros.html#aafcea07af66b16ae9cd4a302b3787a06">Heros::Dans_Air</a></div><div class="ttdeci">bool Dans_Air</div><div class="ttdoc">Booléen vrai si le héros est dans les airs. </div><div class="ttdef"><b>Definition:</b> Heros.h:30</div></div>
+<div class="ttc" id="classHeros_html_ad0b4d91ee20984e9e93c5d97fc4f518d"><div class="ttname"><a href="classHeros.html#ad0b4d91ee20984e9e93c5d97fc4f518d">Heros::Position_Y_Carte</a></div><div class="ttdeci">unsigned int Position_Y_Carte</div><div class="ttdoc">Valeur représentant la position verticale du héros sur la carte. </div><div class="ttdef"><b>Definition:</b> Heros.h:26</div></div>
+<div class="ttc" id="classMini__Carte_html"><div class="ttname"><a href="classMini__Carte.html">Mini_Carte</a></div><div class="ttdef"><b>Definition:</b> Mini_Carte.h:12</div></div>
+<div class="ttc" id="classHeros_html_a695eafe0f97645608064073ed46bf123"><div class="ttname"><a href="classHeros.html#a695eafe0f97645608064073ed46bf123">Heros::Stats</a></div><div class="ttdeci">Statistiques Stats</div><div class="ttdoc">Lien sur les statistiques du héros. </div><div class="ttdef"><b>Definition:</b> Heros.h:36</div></div>
+<div class="ttc" id="classEnnemis_html"><div class="ttname"><a href="classEnnemis.html">Ennemis</a></div><div class="ttdef"><b>Definition:</b> Ennemis.h:10</div></div>
+<div class="ttc" id="classHeros_html_a3edd1240565c50917c8788731c5952ae"><div class="ttname"><a href="classHeros.html#a3edd1240565c50917c8788731c5952ae">Heros::Recharge_Magique</a></div><div class="ttdeci">unsigned int Recharge_Magique</div><div class="ttdoc">Indique si l&#39;attaque magique à déjà été utilisée </div><div class="ttdef"><b>Definition:</b> Heros.h:34</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+GÃ©nÃ©rÃ© le Lundi 1 Mai 2017 17:50:31 pour Damibin/A-Maze-Inc par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>
